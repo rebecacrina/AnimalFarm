@@ -1,6 +1,6 @@
 package com.animal.farm.animals;
 
-public class Spider extends Insect {
+public class Spider extends Arachnid {
 
 	public Spider(String a, int b) {
 		setName(a);
@@ -18,7 +18,7 @@ public class Spider extends Insect {
 	public void rawr() {
 		super.rawr();
 
-		System.out.println("I am also a spider! My name is " + getName()
+		System.out.println(" I am also a spider! My name is " + getName()
 				+ " and I have " + getNumberOfLegs() + " legs!");
 
 	}
