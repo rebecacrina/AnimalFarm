@@ -4,5 +4,8 @@ public class Arachnid extends Animal {
 	public void rawr() {
 		System.out.print("I am an arachnid!");
 	}
+	public Arachnid(int cleaningTime){
+		super(cleaningTime);
+	}
 
 }

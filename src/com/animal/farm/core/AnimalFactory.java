@@ -17,15 +17,20 @@ public class AnimalFactory {
 
 	}
 
-	public static Animal createPigeon(String name, int numberOfLegs,
-			float flightSpeed) {
-		Pigeon pigeon1 = new Pigeon(name, numberOfLegs, flightSpeed);
+	public Animal createPigeon(String name, int numberOfLegs,
+			float flightSpeed, int cleaningTime) {
+		Pigeon pigeon1 = new Pigeon(name, numberOfLegs, flightSpeed, cleaningTime);
 		return pigeon1;
 	}
 
-	public static Animal createSpider(String a, int b) {
-		Spider spider1 = new Spider(a, b);
+	public  Animal createSpider(String a, int b, int cleaningTime) {
+		Spider spider1 = new Spider(a, b, cleaningTime);
 		return spider1;
+	}
+
+	public  Animal createDragonfly(String a, int b, int lifeTime, int cleaningTime) {
+		Dragonfly dragonfly1 = new Dragonfly(a, b, lifeTime,cleaningTime);
+		return dragonfly1;
 	}
 
 }

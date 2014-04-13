@@ -2,7 +2,8 @@ package com.animal.farm.animals;
 
 public class Pigeon extends Bird {
 
-	public Pigeon(String s, int n, float a) {
+	public Pigeon(String s, int n, float a, int cleaningTime) {
+		super(cleaningTime);
 		setName(s);
 		setNumberOfLegs(n);
 		setFlightSpeed(a);
@@ -12,6 +13,7 @@ public class Pigeon extends Bird {
 
 	public void rawr() {
 		super.rawr();
+
 
 		System.out.println(" I am also a Pigeon! My name is " + getName()
 						+ " and I have "

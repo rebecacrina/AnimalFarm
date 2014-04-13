@@ -2,7 +2,8 @@ package com.animal.farm.animals;
 
 public class Spider extends Arachnid {
 
-	public Spider(String a, int b) {
+	public Spider(String a, int b, int cleaningTime) {
+		super(cleaningTime);
 		setName(a);
 		setNumberOfLegs(b);
 		// if animal was public we could've use this.name = a;
@@ -11,6 +12,7 @@ public class Spider extends Arachnid {
 	}
 
 	public Spider() {
+		super(0);
 		setName("Default");
 		setNumberOfLegs(0);
 	}

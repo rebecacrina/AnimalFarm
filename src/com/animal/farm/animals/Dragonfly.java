@@ -2,28 +2,33 @@ package com.animal.farm.animals;
 
 public class Dragonfly extends Insect {
 
-	public Dragonfly(String name, int numberOfLegs, int n) {
+	public Dragonfly(String name, int numberOfLegs, int n, int x) {
+		super(x);
 		setName(name);
 		setNumberOfLegs(numberOfLegs);
 		setLifeTime(n);
+		
+		
 	}
 
-	private int LifeTime;
+	private int lifeTime;
+	//private final int cleaningTime;
+	
 
 	public void rawr() {
 		super.rawr();
 
 		System.out.println(" I am also a Dragonfly! My name is " + getName()
 				+ " and I have " + getNumberOfLegs()
-				+ " legs! I also can live up to " + getLifeTime() + " months!");
+				+ " legs! I also can live up to " + getLifeTime() + " months! I wash myselt in "+ cleaningTime +" minutes");
 
 	}
 
 	public int getLifeTime() {
-		return LifeTime;
+		return lifeTime;
 	}
 
 	public void setLifeTime(int lifeTime) {
-		LifeTime = lifeTime;
+		lifeTime = lifeTime;
 	}
 }

@@ -15,30 +15,31 @@ class Farm {
 		// Animal puppy = new Animal();
 		// is not working but no idea why. is it because Abstract classes cannot
 		// be instantiated, but they can be subclassed.?
-		Animal a = new Arachnid();
+		/*Animal a = new Arachnid(5);
 		a.rawr();
 		System.out.println();
 
-		Insect b = new Dragonfly("Lily", 4, 5);
+		Insect b = new Dragonfly("Lily", 4, 5,3);
 		b.rawr();
 
-		Bird e = new Pigeon("Princess", 2, 56);
+		Bird e = new Pigeon("Princess", 2, 56,5);
 		e.rawr();
 
-		Animal c = new Spider("Alex", 2);
+		Animal c = new Spider("Alex", 2,7);
 		c.rawr();
 
 		Arachnid d = new Spider();
-		d.rawr();
+		d.rawr();*/
 
-		AnimalFactory animal1 = AnimalFactory.getInstance();
+		AnimalFactory factory = AnimalFactory.getInstance();
 
-		Pigeon animal2 = (Pigeon) AnimalFactory.createPigeon("Pricess", 2,
-				65.656f);
-		animal2.rawr();
+		Pigeon pigeon = (Pigeon)factory.createPigeon("Pricess", 2, 65.656f, 4);
+		pigeon.rawr();
 
-		Spider animal3 = (Spider) AnimalFactory.createSpider("Alex", 2);
-		animal3.rawr();
+		Spider spider = (Spider) factory.createSpider("Alex", 2, 6);
+		spider.rawr();
+		
+		Dragonfly dragonfly = (Dragonfly) factory.createDragonfly("Lily", 2, 5, 4);
 
 	}
 
