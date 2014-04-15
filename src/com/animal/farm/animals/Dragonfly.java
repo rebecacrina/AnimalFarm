@@ -20,7 +20,7 @@ public class Dragonfly extends Insect {
 
 		System.out.println(" I am also a Dragonfly! My name is " + getName()
 				+ " and I have " + getNumberOfLegs()
-				+ " legs! I also can live up to " + getLifeTime() + " months! I wash myselt in "+ cleaningTime +" minutes");
+				+ " legs! I also can live up to " + getLifeTime() + " months! I wash myselt in "+ getCleaningTime() +" minutes");
 
 	}
 

@@ -3,7 +3,7 @@ package com.animal.farm.animals;
 public abstract class Animal {
 	protected String name;
 	protected int numberOfLegs;
-	protected final int cleaningTime;
+	private final int cleaningTime;
 	
 	public Animal(int x){
 		cleaningTime = x;
@@ -25,4 +25,8 @@ public abstract class Animal {
 		return numberOfLegs;
 	}
 	public abstract void rawr();
+
+	public int getCleaningTime() {
+		return cleaningTime;
+	}
 }
