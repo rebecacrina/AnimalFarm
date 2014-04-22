@@ -108,14 +108,15 @@ public class Farm extends JFrame {
 
 		add(clean);
 
-		final int index1, index2;
-		index1 = box1.getSelectedIndex();
-		index2 = box1.getSelectedIndex();
+		
 		final int selectedAnimalCleaningTime, selectedFarmerAvailableTime;
 
 		clean.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
+				int index1, index2;
+				index1 = box1.getSelectedIndex();
+				index2 = box1.getSelectedIndex();
 				if (array2[index2].cleanUp(array[index1])) {
 					JOptionPane.showMessageDialog(null,
 							"The animal was cleaned!");
