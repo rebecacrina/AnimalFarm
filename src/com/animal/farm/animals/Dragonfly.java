@@ -28,7 +28,7 @@ public class Dragonfly extends Insect {
 		return lifeTime;
 	}
 
-	public void setLifeTime(int lifeTime) {
-		lifeTime = lifeTime;
+	public void setLifeTime(int x) {
+		lifeTime = x;
 	}
 }
